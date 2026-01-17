@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --bg: #112D4E;
     --primary: #3F72AF;
@@ -30,7 +37,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: aeonik;
 }
 
@@ -55,9 +63,15 @@ body {
     border: 1px solid var(--card);
     border-radius: 10px;
     padding: 20px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .main nav .nav-in button{
     padding: 10px 20px;
@@ -68,12 +82,16 @@ body {
     font-weight: 600;
     background-color: var(--card);
     color: var(--bg);
-    box-shadow: 2px 2px 10px var(--black);
+    -webkit-box-shadow: 2px 2px 10px var(--black);
+            box-shadow: 2px 2px 10px var(--black);
+    -webkit-transition: all ease 0.1s;
+    -o-transition: all ease 0.1s;
     transition: all ease 0.1s;
 }
 .main nav .nav-in button:active{
     scale: 0.97;
-    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
 }
 
 section.allElems {
@@ -91,9 +109,15 @@ section.allElems {
     margin-bottom: 40px;
     border-radius: 1rem;
     padding: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 header .header1 h4{
     font-size: 30px;
@@ -124,10 +148,17 @@ header .header2 h5{
     font-weight: 500;
 }
 .allElems .allFeatures{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -137,26 +168,32 @@ header .header2 h5{
     color: #112D4E;
     font-size: 14px;
     border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     overflow: hidden;
     position: relative;
 }
 
 .elem:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     cursor: pointer;
 
 }
 
 .elem:active {
-    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
 }
 
 .elem img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 
 .elem h2 {
@@ -191,7 +228,9 @@ header .header2 h5{
 }
 
 .back:active {
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
 }
 
 
@@ -200,9 +239,15 @@ header .header2 h5{
     width: 100%;
     margin-top: 40px;
     color: var(--black);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 
@@ -217,8 +262,13 @@ header .header2 h5{
 }
 
 .todo-container .addTask form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 25px;
 }
 
@@ -245,9 +295,15 @@ header .header2 h5{
 }
 
 .todo-container .addTask form .mark-imp {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     gap: 3px;
     font-size: 16px;
     color: var(--bg);
@@ -272,7 +328,9 @@ header .header2 h5{
 }
 
 .addTask form button:active {
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
 }
 
 .fullElem .todo-container .allTask {
@@ -300,14 +358,24 @@ header .header2 h5{
     margin-bottom: 15px;
     padding: 10px 15px;
     border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .todo-container .allTask .task h5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 5px;
 }
 
@@ -349,17 +417,21 @@ header .header2 h5{
 .dailyPlanner-page .clearPlan{
     background-color: transparent;
     margin-bottom: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 5px 10px;
     border: 1px solid var(--card);
     border-radius: 10px;
     font-size: 30px;
     cursor: pointer;
-    box-shadow: 2px 2px 10px var(--black);
+    -webkit-box-shadow: 2px 2px 10px var(--black);
+            box-shadow: 2px 2px 10px var(--black);
 }
 .dailyPlanner-page .clearPlan:active{
     scale: 0.97;
-    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
 }
 .dailyPlanner-page .dayPlanner {
     background-color: var(--primary);
@@ -367,10 +439,17 @@ header .header2 h5{
     width: 100%;
     border-radius: 5px;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     overflow: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--bg) var(--primary);
@@ -416,9 +495,15 @@ header .header2 h5{
     height: auto;
     width: 100%;
     /* background-color: red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .motivation-page .container .wrapper{
     height: 80%;
@@ -426,8 +511,13 @@ header .header2 h5{
     background-color: var(--primary);
     border-radius: 30px;
     padding: 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 30px;
 
 }
@@ -436,6 +526,8 @@ header .header2 h5{
 }
 .motivation-page .container .wrapper h5{
     background-color: var(--bg);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 10px 20px;
     border-radius: 20px;
@@ -458,8 +550,12 @@ header .header2 h5{
     width: 100%;
     margin: 50px 0;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .pomodoro-page .session h3{
     padding: 10px 20px;
@@ -471,7 +567,9 @@ header .header2 h5{
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 .pomodoro-page .pomo-timer h1{
     font-size: 80px;
@@ -486,10 +584,14 @@ header .header2 h5{
     background-color: var(--card);
     color: var(--bg);
     margin:10px;
-    box-shadow: 5px 5px 5px black;
+    -webkit-box-shadow: 5px 5px 5px black;
+            box-shadow: 5px 5px 5px black;
+    -webkit-transition: all ease 0.1s;
+    -o-transition: all ease 0.1s;
     transition: all ease 0.1s;
 }
 .pomodoro-page .pomo-timer button:active{
     scale: 0.97;
-    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
 }
